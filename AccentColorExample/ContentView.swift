@@ -39,6 +39,18 @@ struct ContentView: View {
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 .foregroundStyle(.tint)
                 .tint(.purple)
+            
+            Button("I'm a regular button") {
+                print("Hello")
+            }
+            .buttonStyle(.borderedProminent)
+            
+            Button("I'm a button with an accent color override") {
+                print("Hello")
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+
         }
         .padding()
     }
